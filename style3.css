@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+table{
+  border: 1px;
+   border-color :white;
+   color : white;
+ 
+}
+
+
+a {
+ font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+
+
+}
+
+a:hover {
+  color:cyan;
+  background-color : purple;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  
+  background-color: white;
+  border-bottom: solid 1px #ebebeb;
+  margin-top: 0px;
+  background-image: linear-gradient(to right, cyan, blue);
+  
+}
+
+header nav{
+  float: right;
+  padding: 32px 16px;
+  font-family: Verdana, sans-serif;
+  color: purple;
+}
+header .title1{
+  padding: 16px 16px;
+  float: left;
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-type :bold; 
+  margin-left: 90px;
+  margin-top:13px;
+  background-color: blue;
+
+}
+header .navigation-item{
+  padding: 16px;
+}
+header .navigation-home{
+  padding: 16px;
+    background-color: red;
+     border-radius: 25px;
+
+}
+header .navigation-register{
+  padding: 16px;
+  background-color: red;
+  border-radius: 25px;
+}
+
+.hhhh{
+clear: both;
+
+}
+main{
+color:white;
+
+float: left;
+margin-top: 130px;
+
+}
+
+
+
+body{
+
+background-color: #deff93;
+
+
+
+}
