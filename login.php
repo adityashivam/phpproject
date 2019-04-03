@@ -53,7 +53,21 @@ function validateform(){
 
    <?php
 
-   if(!mysqli_select_db())
+    session_start();
+
+$cookie_name = "user";
+$cookie_value = "username";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+     if (isset($_POST['login']))
+     {
+  $con = mysqli_connect('127.0.0.1','root','');
+  
+   if(!$con)
+      {
+        echo 'Not Connected To Server';
+    
+      }
+   if(!mysqli_select_db($con,'exam'))
       {
           echo 'Database Not Selected';    
       } 
@@ -61,7 +75,7 @@ function validateform(){
    $Email = $_POST['email'];
    $Pass  = $_POST['psw'];
    $_SESSION["Email"] = $Email;
- 
+   $_COOKIE[$cookie_name] = $Email;
 
 
 
